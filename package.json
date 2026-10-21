@@ -4,7 +4,7 @@
   "description": "Reward platform starter with demo tasks and manual withdrawal review",
   "main": "server.js",
   "scripts": { "start": "node server.js" },
-  "engines": { "node": ">=20" },
+  "engines": { "node": "22.22.0" },
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "better-sqlite3": "^11.10.0",
