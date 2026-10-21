@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="hi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#172554"><title>Reward Watch & Earn</title><link rel="stylesheet" href="/style.css"></head>
+<body><header><div class="wrap nav"><div class="brand">₹ Reward <span>Watch & Earn</span></div><button id="logout" class="ghost hidden">लॉगआउट</button></div></header>
+<main class="wrap">
+<section class="hero"><div><p class="eyebrow">देखें • सीखें • रिवॉर्ड</p><h1>एक सरल रिवॉर्ड डैशबोर्ड</h1><p>टास्क, बैलेंस और निकासी अनुरोध एक ही जगह।</p></div><div class="hero-icon">₹</div></section>
+<div id="notice" class="notice hidden"></div>
+<section id="auth" class="auth-grid">
+ <article class="panel"><h2>लॉगिन</h2><form id="loginForm"><label>ईमेल<input name="email" type="email" required autocomplete="email"></label><label>पासवर्ड<input name="password" type="password" required autocomplete="current-password"></label><button>लॉगिन करें</button></form></article>
+ <article class="panel"><h2>नया खाता बनाएँ</h2><form id="registerForm"><label>आपका नाम<input name="name" maxlength="80" required></label><label>ईमेल<input name="email" type="email" required autocomplete="email"></label><label>पासवर्ड (कम से कम 8 अक्षर)<input name="password" type="password" minlength="8" required autocomplete="new-password"></label><button>रजिस्टर करें</button></form></article>
+</section>
+<section id="app" class="hidden">
+ <div class="stats"><article class="stat"><span>आपका बैलेंस</span><strong id="balance">₹0.00</strong></article><article class="stat"><span>न्यूनतम निकासी</span><strong id="minimum">₹100</strong></article><article class="stat"><span>खाता</span><strong id="username">यूज़र</strong></article></div>
+ <div id="demoBanner" class="warning"><b>डेमो मोड:</b> नीचे वाला टास्क केवल परीक्षण के लिए है। ₹1 डेमो क्रेडिट असली कमाई नहीं है और बैंक में नहीं निकाला जा सकता।</div>
+ <div class="content-grid">
+  <article class="panel"><h2>टास्क और रिवॉर्ड</h2><p>असली विज्ञापन/ऑफ़र केवल अनुमोदित प्रदाता से जोड़े जा सकते हैं। विज्ञापन पर क्लिक या नकली व्यू से कमाई नहीं बनती।</p><div class="task"><div class="task-symbol">▶</div><div class="task-text"><b>डेमो टास्क</b><span>परीक्षण के लिए ₹1 डेमो क्रेडिट</span></div><button id="demoTask">डेमो चलाएँ</button></div></article>
+  <article class="panel"><h2>निकासी अनुरोध</h2><p class="muted">न्यूनतम राशि पूरी होने पर अनुरोध भेजें। बैंक ट्रांसफर अभी मैन्युअल समीक्षा से होगा।</p><form id="withdrawForm"><label>राशि (₹)<input name="amount" type="number" min="1" step="1" required></label><label>UPI ID या बैंक भुगतान विवरण<input name="destination" maxlength="180" required placeholder="UPI ID / आवश्यक बैंक विवरण"></label><button>निकासी का अनुरोध भेजें</button></form><p class="small">सुरक्षा के लिए यहाँ ATM PIN, OTP या नेटबैंकिंग पासवर्ड कभी न दें।</p></article>
+ </div>
+ <div class="content-grid"><article class="panel"><h2>टास्क इतिहास</h2><div id="tasks" class="history muted">अभी कोई टास्क नहीं।</div></article><article class="panel"><h2>निकासी इतिहास</h2><div id="withdrawals" class="history muted">अभी कोई अनुरोध नहीं।</div></article></div>
+</section>
+<footer>यह starter प्रोजेक्ट है। असली कमाई, विज्ञापन और बैंक भुगतान चालू होने का दावा नहीं करता।</footer>
+</main><script src="/app.js"></script></body></html>
